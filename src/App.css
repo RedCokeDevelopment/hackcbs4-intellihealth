@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .App-logo {
@@ -39,4 +39,48 @@
 
 button {
   font-size: calc(10px + 2vmin);
+}
+
+.middle {
+  padding: 20px;
+  margin: 2em 8vw;
+}
+
+.spinner {
+  margin: 10px;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+}
+
+.middlealert {
+  margin-bottom: 2em;
+  /*text-align: left;*/
+  /*margin: 1em 8vw;*/
+}
+
+.halfwidth {
+  /*width: 50%;*/
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #F5EFED;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #F5EFED;
+}
+.center {
+  text-align: center;
 }

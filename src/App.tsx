@@ -3,30 +3,42 @@ import logo from './logo.svg'
 import './App.css'
 import {Alignment, Button, Classes, Navbar, NavbarDivider, NavbarGroup, NavbarHeading} from "@blueprintjs/core";
 import {BrowserRouter, Route, Switch, Link} from "react-router-dom";
+import DrugSearch from "./page/DrugSearch";
+import FoodSearch from "./page/FoodSearch";
+import Drug from "./page/Drug";
 
 function App() {
 
     return (
         <BrowserRouter>
             <div className="App">
-                <header>
+                <header className={'overflow-x-auto'}>
                     <Navbar>
                         <NavbarGroup align={Alignment.LEFT}>
-                            <NavbarHeading>IntelliHealth</NavbarHeading>
+                            <NavbarHeading>IntelliHealth (medi.study)</NavbarHeading>
                             <NavbarDivider/>
                             <Link to={'/'}>
                                 <Button className={Classes.MINIMAL} icon="home" text="Home"/>
                             </Link>
-
+                            <Link to={'/drug'}>
+                                <Button className={Classes.MINIMAL} icon="git-repo" text="Drug Search"/>
+                            </Link>
+                            <Link to={'/food'}>
+                                <Button className={Classes.MINIMAL} icon="info-sign" text="Food Nutrition Search"/>
+                            </Link>
                         </NavbarGroup>
                     </Navbar>
                 </header>
                 <Switch>
-                    <Route path="/about">
-                        <h1>About</h1>
+                    <Route exact path="/drug">
+                        <DrugSearch/>
                     </Route>
-                    <Route path="/users">
-                        <h1>Users</h1>
+                    <Route path="/drug/:drugName" render={(props) => <Drug {...props} />} />
+                    <Route exact path="/food">
+                        <FoodSearch/>
+                    </Route>
+                    <Route path="/food/:foodName">
+                        <FoodSearch/>
                     </Route>
                     <Route exact path="/">
                         <h1>Home</h1>
