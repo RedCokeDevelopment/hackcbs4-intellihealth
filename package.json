@@ -8,10 +8,16 @@
   },
   "dependencies": {
     "@blueprintjs/core": "^3.51.3",
+    "@blueprintjs/datetime": "^3.23.18",
+    "@blueprintjs/icons": "^3.31.0",
+    "@blueprintjs/select": "^3.18.10",
+    "@blueprintjs/table": "^3.9.12",
     "@types/react-router-dom": "^5.3.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-router-dom": "^5.3.0"
+    "react-router-dom": "^5.3.0",
+    "sass": "^1.43.4",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
