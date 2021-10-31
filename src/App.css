@@ -84,3 +84,11 @@ tr:nth-child(even) {
 .center {
   text-align: center;
 }
+
+.w-50 {
+  width: 50%;
+}
+
+.buttongrp {
+  width: 100%;
+}
