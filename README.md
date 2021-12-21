@@ -1,4 +1,4 @@
-# hackcbs4-intellihealth Project Frontend
+# hackcbs4-intellihealth Project
 
 This project uses Vite react-ts template.
 
